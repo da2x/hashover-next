@@ -71,6 +71,7 @@
 	</h2>
 
 	<p>
+		By default, Hashover stores comments in XML files in the file system.
 		The following settings are optional, but required if you plan to store
 		comments in a MySQL database or any other SQL server supported by
 		<a href="https://www.php.net/manual/en/pdo.drivers.php" target="_blank">PDO</a>
@@ -85,7 +86,9 @@
 		<dd>
 			This setting specifies what kind of SQL database HashOver stores the comments
 			in, either <code>sqlite</code> or <code>mysql</code>. Other databases might
-			work as well, but they are not officially supported or tested.
+			work as well, but they are not officially supported or tested. This setting
+			has no effect unless you also change the
+			<a href="../settings/#data-format"><code>data-format</code></a> setting.
 		</dd>
 		<dt>
 			<code>$databaseName</code>
